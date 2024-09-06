@@ -32,7 +32,7 @@ getWether('mumbai')
 
 function forecast(result){
     let icon= result.weather[0].icon
-    let iconi = "https://openweathermap.org/img/w/" +icon +".png";
+    let iconi = "https://openweathermap.org/img/wn/" +icon +"@2x.png";
     document.getElementById('img').src=iconi;
     console.log(icon)
 }

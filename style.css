@@ -6,11 +6,10 @@
 }
 
 body {
-    background: rgba(36, 32, 32,0.8)  url(image/weather.jpg);
-    background-position: center;
-    background-size: cover;
-
-    background-repeat: no-repeat;
+  
+    background:linear-gradient(135deg,#C33764 ,#1D2671);
+    height: 1px;
+   
 }
 header{
     margin-top: 70px;
@@ -105,7 +104,7 @@ margin-top: 20px;
 #clouds{
     padding: 8px 20px;
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     height: max-content;
     background-color: rgb(82, 94, 231);

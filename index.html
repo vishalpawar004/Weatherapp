@@ -20,15 +20,28 @@
         opacity: 1;
         transform: translateX(0);
     }
+    /* styles.css */
+.navbar-brand {
+
+    animation: animateTitle 2s;
+  }
+  
+  @keyframes animateTitle {
+    0% { opacity: 0; transform: translateY(-30px); }
+    50% { opacity: 1; transform: translateY(0); }
+
+  }
+  
    </style>
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand " href="#">Weather App</a>
-            <div class="d-flex ms-auto ">
-                <input class="form-control me-2" id="input" type="search" placeholder="Enter the city..." aria-label="Search">
-                <button class="btn btn-success" id="sumbit" type="submit">Search</button>
+            <div class="d-flex ms-auto mt-2 ">
+                <input class="form-control me-2 " id="input" type="search" placeholder="Enter the city..." aria-label="Search">
+                <button class="btn btn-success " id="sumbit" type="submit">Search</button>
             </div>
         </div>
     </nav>
@@ -45,9 +58,11 @@
                             <p id="temperature">......</p><br>
                         </div>
                     
-                            <a href="#" class="btn" id="btn">
-                                <span id="clouds">Broken Cloud</span>
-                            </a>
+                            <div class="container justify-content-center d-flex mt-4">
+                              
+                                    <button type="button" id="clouds" class="btn btn-primary">Primary</button>
+                            
+                            </div>
                         
                         </div>
                     </div>
@@ -107,6 +122,8 @@
         </div>
         </div>
     </header>
+
+
     <script>
         window.onload = function() {
             var cards = document.querySelectorAll('.card');
