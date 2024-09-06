@@ -92,7 +92,8 @@ header{
 
 }
 #img{
-    background-color:#90e0ef;
+    background-color:rgba(118, 205, 243, 0.881);
+    border-radius: 15%;
 }
 
 #btn{
