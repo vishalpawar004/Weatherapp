@@ -3,26 +3,30 @@ let input=document.querySelector('#input');
 // let temperature=document.querySelector('#temperature')
 const options = {
     method: 'GET',
-    headers: {
-        'x-rapidapi-key': 'ea41dc8b5fmsh176c23e10416a7bp1110edjsnf4bf8b5bbbbe',
-        'x-rapidapi-host': 'weather-api138.p.rapidapi.com'
-    }
+ 
 };
 const getWether=(input)=> {
-fetch(`https://weather-api138.p.rapidapi.com/weather?city_name=${input}`, options).then(response => response.json()).then(result => {
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=5c2364d68570cdf4767080ac952d0d2b`, options).then(response => response.json()).then(result => {
     console.log(result)
 
 forecast(result);
 detail(result);
 card(result);
+// check(result);
 
 }).catch(err => console.error(err))
 
 }
 
+
+// function check(result){
+//     console.log(result.name);
+//     console.log(sd);
+// }
+
 btn.addEventListener('click',function(e){
     getWether(input.value)
-    console.log(input.value)
+    
 })
 getWether('mumbai')
 
