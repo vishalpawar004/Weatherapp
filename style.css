@@ -123,12 +123,13 @@ margin-top: 20px;
 }
 
 .box-title {
-    color: #d4a373;
+    color: #ffc8dd;
     font-size: 1em;
     font-weight: bold;
 }
 .text-content{
     color: #dad7cd;
+    font-weight: bold;
 }
 #card-3{
     margin-top: 20px;
