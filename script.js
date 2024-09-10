@@ -12,21 +12,16 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=5c2364d6
 forecast(result);
 detail(result);
 card(result);
-// check(result);
 
-}).catch(err => console.error(err))
+
+}).catch(err => alert('Please Enter Correct City'))
 
 }
 
 
-// function check(result){
-//     console.log(result.name);
-//     console.log(sd);
-// }
 
 btn.addEventListener('click',function(e){
     getWether(input.value)
-    
 })
 getWether('mumbai')
 
