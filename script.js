@@ -14,7 +14,7 @@ detail(result);
 card(result);
 
 
-}).catch(err => alert('Please Enter Correct City'))
+}).catch(err => alert('Please Enter a Valid City '))
 
 }
 
